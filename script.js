@@ -9,7 +9,7 @@ function previsaoTempo() {
 
     try {
       const response = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=dd4b51881dd54b618c7224232240511&q=${cidade}&aqi=no&lang=pt`
+        `https://api.weatherapi.com/v1/current.json?key=dd4b51881dd54b618c7224232240511&q=${cidade}&aqi=no&lang=pt`
       );
 
       const data = await response.json();
