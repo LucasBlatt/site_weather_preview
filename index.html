@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="conteudo">
+      <div class="nav">
+        <img src="favicon.ico" />
+        <h2>Previsão do Tempo</h2>
+
+        <form id="formCidade">
+          <label for="txtCidade">Digite sua cidade</label>
+          <br />
+          <input type="text" id="txtCidade" class="input_and_button" />
+          <button
+            type="submit"
+            onclick="previsaoTempo"
+            class="input_and_button"
+          >
+            <i class="fa fa-search" id="botaoPesquisa"></i>
+          </button>
+        </form>
+      </div>
+
+      <div id="infosApi" class="infosApi"></div>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
